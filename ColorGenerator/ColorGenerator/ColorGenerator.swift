@@ -18,7 +18,7 @@ class ColorGenerator {
     init() {
     }
     
-    func stringToInt(str: String) -> (CGFloat) {
+    func stringToFloat(str: String) -> (CGFloat) {
 
         let string = str
         var float = CGFloat()
@@ -27,7 +27,6 @@ class ColorGenerator {
         {
             float = CGFloat(double)
         }
-        
         return float
         
     }
@@ -36,7 +35,7 @@ class ColorGenerator {
     
     func generate (red: String, green: String, blue: String) -> UIColor {
         
-        return UIColor(red: (stringToInt(str: red)) / 256, green: stringToInt(str: green) / 256, blue: stringToInt(str: blue) / 256, alpha: 1.0)
+        return UIColor(red: (stringToFloat(str: red)) / 256, green: stringToFloat(str: green) / 256, blue: stringToFloat(str: blue) / 256, alpha: 1.0)
         
     }
     
@@ -45,12 +44,18 @@ class ColorGenerator {
     
     func isValidInput(inputString: String, characterCount: Int) -> Bool {
         
-        let int = stringToInt(str: inputString)
-
-        if (int >= 0 && int <= 256){
-            return true
+        if characterCount > 2 {
+            return false
+        } else {
+            let float = stringToFloat(str: inputString)
+            
+            if (float >= 0 && float <= 256){
+                return true
+            }
+            return false
         }
-        return false
+        
+
     }
     
 }
