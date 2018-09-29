@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "Green"; ObjectID = "5De-YP-Nje"; */
+"5De-YP-Nje.text" = "绿色";
+
+/* Class = "UILabel"; text = "蓝色"; ObjectID = "am4-5e-INx"; */
+"am4-5e-INx.text" = "蓝色";
+
+/* Class = "UILabel"; text = "红色"; ObjectID = "cvE-SQ-M5N"; */
+"cvE-SQ-M5N.text" = "红色";
+
+/* Class = "UIButton"; normalTitle = "Generate"; ObjectID = "xBr-Qh-e3a"; */
+"xBr-Qh-e3a.normalTitle" = "生成";

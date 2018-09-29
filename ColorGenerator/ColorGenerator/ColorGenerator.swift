@@ -49,10 +49,12 @@ class ColorGenerator {
         } else {
             let float = stringToFloat(str: inputString)
             
-            if (float >= 0 && float <= 256){
-                return true
+            if float < 0 {
+                return false
+            } else if float > 256 {
+                return false
             }
-            return false
+            return true
         }
         
 

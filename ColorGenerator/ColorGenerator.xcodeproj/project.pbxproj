@@ -43,6 +43,11 @@
 		7AF1224E215F1919002D2171 /* ColorGeneratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorGeneratorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AF12259215F1919002D2171 /* ColorGeneratorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorGeneratorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AF1226D215F220A002D2171 /* ColorGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorGenerator.swift; sourceTree = "<group>"; };
+		7AFE3C1921601A770087FFAF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		7AFE3C1A21601B7A0087FFAF /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		7AFE3C1B21601B7A0087FFAF /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		7AFE3C1C21601BF90087FFAF /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		7AFE3C1D21601BF90087FFAF /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -273,6 +278,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				7AF12242215F1918002D2171 /* Base */,
+				7AFE3C1921601A770087FFAF /* en */,
+				7AFE3C1A21601B7A0087FFAF /* zh-Hans */,
+				7AFE3C1C21601BF90087FFAF /* de */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -281,6 +289,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				7AF12247215F1919002D2171 /* Base */,
+				7AFE3C1B21601B7A0087FFAF /* zh-Hans */,
+				7AFE3C1D21601BF90087FFAF /* de */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -292,6 +302,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -352,6 +363,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
