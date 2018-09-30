@@ -12,12 +12,14 @@ import UIKit
 class ColorGenerator {
     
     
-    
+    // initial background colour
     var background = UIColor.white
+    
     
     init() {
     }
     
+    // make the input from string to float
     func stringToFloat(str: String) -> (CGFloat) {
 
         let string = str
@@ -32,7 +34,7 @@ class ColorGenerator {
     }
     
     
-    
+    // generate a new colour based on the input
     func generate (red: String, green: String, blue: String) -> UIColor {
         
         return UIColor(red: (stringToFloat(str: red)) / 256, green: stringToFloat(str: green) / 256, blue: stringToFloat(str: blue) / 256, alpha: 1.0)
@@ -41,7 +43,7 @@ class ColorGenerator {
     
     
     
-    
+    // check if the input is valid (max 3 digit)
     func isValidInput(inputString: String, characterCount: Int) -> Bool {
         
         if characterCount > 2 {

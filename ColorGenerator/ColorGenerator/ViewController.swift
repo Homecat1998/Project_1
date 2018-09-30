@@ -12,6 +12,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     let model = ColorGenerator()
     
+    // initialization
     @IBOutlet weak var redLabel: UILabel!
     @IBOutlet weak var greenLabel: UILabel!
     @IBOutlet weak var blueLabel: UILabel!
@@ -28,7 +29,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
 
 
-    
+    // when button is clickedd
     @IBAction func Generate(_ sender: UIButton) {
         
         if let red = redInput.text, let green = greenInput.text, let blue = blueInput.text{
@@ -40,7 +41,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     
     
-    // MARK: - Actions
+    // Gesture: tapped.
+    // Make the background white and hide the keyboard
     @IBAction func onTap(_ sender: UITapGestureRecognizer) {
         view.endEditing(true)
         view.backgroundColor = UIColor.white
