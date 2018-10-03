@@ -32,8 +32,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
     // when button is clickedd
     @IBAction func Generate(_ sender: UIButton) {
         
+        // check if the input is in the valid range
+        // if not, change to gray
         if let red = redInput.text, let green = greenInput.text, let blue = blueInput.text{
+            if model.inputInRange(input: red) && model.inputInRange(input: green) && model.inputInRange(input: blue){
                 view.backgroundColor = model.generate(red: red, green: green, blue: blue)
+            }else{
+                return view.backgroundColor = UIColor.gray
+            }
         }else{
             return view.backgroundColor = UIColor.gray
         }

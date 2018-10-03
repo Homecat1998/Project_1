@@ -1,6 +1,6 @@
 Requirements:
 
-This application is a simple color generator. After inputting the index for red, green, blue and press the "generate" button, it will change the background color to the target one according to the input. To clear the background color to white or hide the keyboard, just simply tap anywhere other than the textfields or button.
+This application is a simple color generator. After inputting the index for red, green, blue and press the "generate" button, it will change the background color to the target one according to the input. 
+To clear the background color to white or hide the keyboard, just simply tap anywhere other than the textfields or button.
+If someone accidentally enters a number > 255 or < 0, it will change the background color to gray. Simply tap somewhere else to recover it to white.
 This app is also equipped with localization and is currently available in Chinese, German and English. 
-
-Thanks!

@@ -42,6 +42,21 @@ class ColorGenerator {
     }
     
     
+    // check if the input is in the valid range
+    func inputInRange(input: String) -> Bool {
+        
+        let float = stringToFloat(str: input)
+
+        if float > 255 {
+            return false
+        } else if float < 0{
+            return false
+        } else {
+            return true
+        }
+
+    }
+    
     
     // check if the input is valid (max 3 digit)
     func isValidInput(inputString: String, characterCount: Int) -> Bool {
@@ -49,13 +64,6 @@ class ColorGenerator {
         if characterCount > 2 {
             return false
         } else {
-            let float = stringToFloat(str: inputString)
-            
-            if float < 0 {
-                return false
-            } else if float > 256 {
-                return false
-            }
             return true
         }
         
